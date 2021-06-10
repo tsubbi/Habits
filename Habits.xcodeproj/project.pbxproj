@@ -18,6 +18,15 @@
 		A1E6AF0626726D7600FF3E8C /* LogCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF0526726D7600FF3E8C /* LogCollectionViewController.swift */; };
 		A1E6AF0826726D8E00FF3E8C /* HabitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF0726726D8E00FF3E8C /* HabitDetailViewController.swift */; };
 		A1E6AF0A26726D9A00FF3E8C /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF0926726D9A00FF3E8C /* UserDetailViewController.swift */; };
+		A1E6AF0F2672708400FF3E8C /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF0E2672708400FF3E8C /* Habit.swift */; };
+		A1E6AF11267271BA00FF3E8C /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF10267271BA00FF3E8C /* APIRequest.swift */; };
+		A1E6AF1326727EEF00FF3E8C /* HabitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF1226727EEF00FF3E8C /* HabitRequest.swift */; };
+		A1E6AF17267280B500FF3E8C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF16267280B500FF3E8C /* Color.swift */; };
+		A1E6AF19267280EA00FF3E8C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF18267280EA00FF3E8C /* Category.swift */; };
+		A1E6AF1C26728DAE00FF3E8C /* PrimarySecondaryTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF1B26728DAE00FF3E8C /* PrimarySecondaryTextCollectionViewCell.swift */; };
+		A1E6AF1E2672C18E00FF3E8C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF1D2672C18E00FF3E8C /* Settings.swift */; };
+		A1E6AF212672D29F00FF3E8C /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF202672D29F00FF3E8C /* UICollectionViewDiffableDataSource+ViewModel.swift */; };
+		A1E6AF242672E6B700FF3E8C /* NamedSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AF232672E6B600FF3E8C /* NamedSectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +43,15 @@
 		A1E6AF0526726D7600FF3E8C /* LogCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCollectionViewController.swift; sourceTree = "<group>"; };
 		A1E6AF0726726D8E00FF3E8C /* HabitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewController.swift; sourceTree = "<group>"; };
 		A1E6AF0926726D9A00FF3E8C /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		A1E6AF0E2672708400FF3E8C /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		A1E6AF10267271BA00FF3E8C /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		A1E6AF1226727EEF00FF3E8C /* HabitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRequest.swift; sourceTree = "<group>"; };
+		A1E6AF16267280B500FF3E8C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A1E6AF18267280EA00FF3E8C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A1E6AF1B26728DAE00FF3E8C /* PrimarySecondaryTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarySecondaryTextCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1E6AF1D2672C18E00FF3E8C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A1E6AF202672D29F00FF3E8C /* UICollectionViewDiffableDataSource+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewDiffableDataSource+ViewModel.swift"; sourceTree = "<group>"; };
+		A1E6AF232672E6B600FF3E8C /* NamedSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedSectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +87,13 @@
 				A1E6AEFE26715A9F00FF3E8C /* SupportingFiles */,
 				A1E6AEF32671496C00FF3E8C /* Assets.xcassets */,
 				A1E6AEF82671496C00FF3E8C /* Info.plist */,
-				A1E6AEFF26726D2200FF3E8C /* HomeCollectionViewController.swift */,
-				A1E6AF0126726D3300FF3E8C /* HabitCollectionViewController.swift */,
-				A1E6AF0326726D5800FF3E8C /* UserCollectionViewController.swift */,
-				A1E6AF0526726D7600FF3E8C /* LogCollectionViewController.swift */,
-				A1E6AF0726726D8E00FF3E8C /* HabitDetailViewController.swift */,
-				A1E6AF0926726D9A00FF3E8C /* UserDetailViewController.swift */,
+				A1E6AF0B2672700000FF3E8C /* ViewControllers */,
+				A1E6AF1A2672810D00FF3E8C /* Models */,
+				A1E6AF10267271BA00FF3E8C /* APIRequest.swift */,
+				A1E6AF1226727EEF00FF3E8C /* HabitRequest.swift */,
+				A1E6AF1F2672D27600FF3E8C /* Utility */,
+				A1E6AF222672D77D00FF3E8C /* Extension */,
+				A1E6AF232672E6B600FF3E8C /* NamedSectionHeaderView.swift */,
 			);
 			path = Habits;
 			sourceTree = "<group>";
@@ -88,6 +107,62 @@
 				A1E6AEF52671496C00FF3E8C /* LaunchScreen.storyboard */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A1E6AF0B2672700000FF3E8C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1E6AEFF26726D2200FF3E8C /* HomeCollectionViewController.swift */,
+				A1E6AF0D2672705100FF3E8C /* Habit */,
+				A1E6AF0C2672704000FF3E8C /* User */,
+				A1E6AF0526726D7600FF3E8C /* LogCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A1E6AF0C2672704000FF3E8C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A1E6AF0326726D5800FF3E8C /* UserCollectionViewController.swift */,
+				A1E6AF0926726D9A00FF3E8C /* UserDetailViewController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		A1E6AF0D2672705100FF3E8C /* Habit */ = {
+			isa = PBXGroup;
+			children = (
+				A1E6AF0126726D3300FF3E8C /* HabitCollectionViewController.swift */,
+				A1E6AF0726726D8E00FF3E8C /* HabitDetailViewController.swift */,
+				A1E6AF1B26728DAE00FF3E8C /* PrimarySecondaryTextCollectionViewCell.swift */,
+			);
+			path = Habit;
+			sourceTree = "<group>";
+		};
+		A1E6AF1A2672810D00FF3E8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1E6AF0E2672708400FF3E8C /* Habit.swift */,
+				A1E6AF18267280EA00FF3E8C /* Category.swift */,
+				A1E6AF16267280B500FF3E8C /* Color.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1E6AF1F2672D27600FF3E8C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A1E6AF1D2672C18E00FF3E8C /* Settings.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A1E6AF222672D77D00FF3E8C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1E6AF202672D29F00FF3E8C /* UICollectionViewDiffableDataSource+ViewModel.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,13 +236,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E6AF0026726D2200FF3E8C /* HomeCollectionViewController.swift in Sources */,
+				A1E6AF212672D29F00FF3E8C /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */,
+				A1E6AF242672E6B700FF3E8C /* NamedSectionHeaderView.swift in Sources */,
 				A1E6AF0426726D5800FF3E8C /* UserCollectionViewController.swift in Sources */,
 				A1E6AF0A26726D9A00FF3E8C /* UserDetailViewController.swift in Sources */,
 				A1E6AF0226726D3300FF3E8C /* HabitCollectionViewController.swift in Sources */,
+				A1E6AF17267280B500FF3E8C /* Color.swift in Sources */,
 				A1E6AEEB2671496900FF3E8C /* AppDelegate.swift in Sources */,
 				A1E6AEED2671496900FF3E8C /* SceneDelegate.swift in Sources */,
+				A1E6AF1C26728DAE00FF3E8C /* PrimarySecondaryTextCollectionViewCell.swift in Sources */,
+				A1E6AF1326727EEF00FF3E8C /* HabitRequest.swift in Sources */,
+				A1E6AF1E2672C18E00FF3E8C /* Settings.swift in Sources */,
+				A1E6AF0F2672708400FF3E8C /* Habit.swift in Sources */,
 				A1E6AF0826726D8E00FF3E8C /* HabitDetailViewController.swift in Sources */,
+				A1E6AF11267271BA00FF3E8C /* APIRequest.swift in Sources */,
 				A1E6AF0626726D7600FF3E8C /* LogCollectionViewController.swift in Sources */,
+				A1E6AF19267280EA00FF3E8C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
