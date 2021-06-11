@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "Habit"
 
 class HabitCollectionViewController: UICollectionViewController {
     
@@ -50,16 +50,9 @@ class HabitCollectionViewController: UICollectionViewController {
     
     func updateCollectionView() {
         var itemsBySection = model.habitByName.values.reduce(into: [ViewModel.Section: [ViewModel.Item]]()) {
-            let section: ViewModel.Section
-            let item: ViewModel.Item
-            if model.favoriteHabits.contains($1) {
-                section = .favorates
-                item = ViewModel.Item(habit: $1, isFavorite: true)
-            } else {
-                section = .category($1.category)
-                item = ViewModel.Item(habit: $1, isFavorite: false)
-            }
-
+            let section: ViewModel.Section = model.favoriteHabits.contains($1) ? .favorates : .category($1.category)
+            let item: ViewModel.Item = ViewModel.Item(habit: $1, isFavorite: model.favoriteHabits.contains($1))
+            
             $0[section, default: []].append(item)
         }
         itemsBySection = itemsBySection.mapValues { $0.sorted() }
@@ -71,7 +64,7 @@ class HabitCollectionViewController: UICollectionViewController {
     
     func createDataSource() -> DataSourceType {
         let dataSource = DataSourceType(collectionView: collectionView) {
-            let cell = $0.dequeueReusableCell(withReuseIdentifier: "Habit", for: $1) as! PrimarySecondaryTextCollectionViewCell
+            let cell = $0.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: $1) as! PrimarySecondaryTextCollectionViewCell
             
             cell.primaryTextLabel.text = $2.habit.name
             
