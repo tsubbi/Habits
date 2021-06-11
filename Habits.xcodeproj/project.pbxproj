@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A1AA03992673121600EDF7FF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03982673121600EDF7FF /* User.swift */; };
 		A1AA039B267327B300EDF7FF /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA039A267327B300EDF7FF /* UserRequest.swift */; };
+		A1AA039F2673488800EDF7FF /* HabitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA039E2673488800EDF7FF /* HabitStatistics.swift */; };
+		A1AA03A1267348E200EDF7FF /* UserCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03A0267348E200EDF7FF /* UserCount.swift */; };
+		A1AA03A326734A3000EDF7FF /* HabitStatisticsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03A226734A3000EDF7FF /* HabitStatisticsRequest.swift */; };
 		A1E6AEEB2671496900FF3E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AEEA2671496900FF3E8C /* AppDelegate.swift */; };
 		A1E6AEED2671496900FF3E8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AEEC2671496900FF3E8C /* SceneDelegate.swift */; };
 		A1E6AEF22671496900FF3E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E6AEF02671496900FF3E8C /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* Begin PBXFileReference section */
 		A1AA03982673121600EDF7FF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A1AA039A267327B300EDF7FF /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		A1AA039E2673488800EDF7FF /* HabitStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStatistics.swift; sourceTree = "<group>"; };
+		A1AA03A0267348E200EDF7FF /* UserCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCount.swift; sourceTree = "<group>"; };
+		A1AA03A226734A3000EDF7FF /* HabitStatisticsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStatisticsRequest.swift; sourceTree = "<group>"; };
 		A1E6AEE72671496900FF3E8C /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E6AEEA2671496900FF3E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E6AEEC2671496900FF3E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +81,7 @@
 				A1E6AF10267271BA00FF3E8C /* APIRequest.swift */,
 				A1E6AF1226727EEF00FF3E8C /* HabitRequest.swift */,
 				A1AA039A267327B300EDF7FF /* UserRequest.swift */,
+				A1AA03A226734A3000EDF7FF /* HabitStatisticsRequest.swift */,
 			);
 			path = Networks;
 			sourceTree = "<group>";
@@ -167,6 +174,8 @@
 				A1E6AF18267280EA00FF3E8C /* Category.swift */,
 				A1E6AF16267280B500FF3E8C /* Color.swift */,
 				A1AA03982673121600EDF7FF /* User.swift */,
+				A1AA039E2673488800EDF7FF /* HabitStatistics.swift */,
+				A1AA03A0267348E200EDF7FF /* UserCount.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,12 +267,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E6AF0026726D2200FF3E8C /* HomeCollectionViewController.swift in Sources */,
+				A1AA03A326734A3000EDF7FF /* HabitStatisticsRequest.swift in Sources */,
+				A1AA03A1267348E200EDF7FF /* UserCount.swift in Sources */,
 				A1E6AF212672D29F00FF3E8C /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */,
 				A1E6AF242672E6B700FF3E8C /* NamedSectionHeaderView.swift in Sources */,
 				A1E6AF0426726D5800FF3E8C /* UserCollectionViewController.swift in Sources */,
 				A1AA039B267327B300EDF7FF /* UserRequest.swift in Sources */,
 				A1E6AF0A26726D9A00FF3E8C /* UserDetailViewController.swift in Sources */,
 				A1E6AF0226726D3300FF3E8C /* HabitCollectionViewController.swift in Sources */,
+				A1AA039F2673488800EDF7FF /* HabitStatistics.swift in Sources */,
 				A1E6AF17267280B500FF3E8C /* Color.swift in Sources */,
 				A1E6AEEB2671496900FF3E8C /* AppDelegate.swift in Sources */,
 				A1E6AEED2671496900FF3E8C /* SceneDelegate.swift in Sources */,
