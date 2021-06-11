@@ -28,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
         </scene>
-        <!--Home Collection View Controller-->
+        <!--Home-->
         <scene sceneID="S8V-MG-8Lf">
             <objects>
                 <collectionViewController id="eex-Pe-hsg" customClass="HomeCollectionViewController" customModule="Habits" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,7 +57,7 @@
                             <outlet property="delegate" destination="eex-Pe-hsg" id="pLy-vX-qmt"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="cGd-QY-H2F"/>
+                    <navigationItem key="navigationItem" title="Home" id="cGd-QY-H2F"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3HH-H4-jJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +141,7 @@
             </objects>
             <point key="canvasLocation" x="2226" y="-865"/>
         </scene>
-        <!--Log Collection View Controller-->
+        <!--Log Habit-->
         <scene sceneID="fig-Be-3dq">
             <objects>
                 <collectionViewController id="mUs-Pc-vAn" customClass="LogCollectionViewController" customModule="Habits" customModuleProvider="target" sceneMemberID="viewController">
@@ -170,13 +170,13 @@
                             <outlet property="delegate" destination="mUs-Pc-vAn" id="SiM-hL-1o8"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="f8K-6r-NJO"/>
+                    <navigationItem key="navigationItem" title="Log Habit" id="f8K-6r-NJO"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRz-Ab-TW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3426" y="856"/>
         </scene>
-        <!--User Collection View Controller-->
+        <!--People-->
         <scene sceneID="W0r-pz-Vqw">
             <objects>
                 <collectionViewController id="cvI-IL-Lr6" customClass="UserCollectionViewController" customModule="Habits" customModuleProvider="target" sceneMemberID="viewController">
@@ -205,7 +205,7 @@
                             <outlet property="delegate" destination="cvI-IL-Lr6" id="L7w-HH-Sac"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="VRR-g0-3a1"/>
+                    <navigationItem key="navigationItem" title="People" id="VRR-g0-3a1"/>
                     <connections>
                         <segue destination="a4h-Ml-Ksy" kind="show" id="W6Y-g2-g1L"/>
                     </connections>
@@ -214,7 +214,7 @@
             </objects>
             <point key="canvasLocation" x="2616" y="856"/>
         </scene>
-        <!--Habit Collection View Controller-->
+        <!--Habit-->
         <scene sceneID="qJQ-ya-HuP">
             <objects>
                 <collectionViewController id="tCz-Ga-zYO" customClass="HabitCollectionViewController" customModule="Habits" customModuleProvider="target" sceneMemberID="viewController">
@@ -223,19 +223,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YB6-1A-L0D">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="414" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="a6L-Q5-ePM">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Habit" id="a6L-Q5-ePM" customClass="PrimarySecondaryTextCollectionViewCell" customModule="Habits" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5Ag-bw-S6K">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWn-hG-H02">
+                                            <rect key="frame" x="8" y="15" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rWn-hG-H02" firstAttribute="centerY" secondItem="5Ag-bw-S6K" secondAttribute="centerY" id="Ns6-XZ-9rM"/>
+                                        <constraint firstItem="rWn-hG-H02" firstAttribute="leading" secondItem="5Ag-bw-S6K" secondAttribute="leading" constant="8" id="oa7-Bg-5iE"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="414" height="50"/>
+                                <connections>
+                                    <outlet property="primaryTextLabel" destination="rWn-hG-H02" id="kKb-Zo-gfC"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -243,14 +259,14 @@
                             <outlet property="delegate" destination="tCz-Ga-zYO" id="NJ8-oC-jev"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="vrO-eG-Kp6"/>
+                    <navigationItem key="navigationItem" title="Habit" id="vrO-eG-Kp6"/>
                     <connections>
                         <segue destination="78j-Z5-D30" kind="show" id="Qjr-bb-TMc"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d51-7X-NWT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="856"/>
+            <point key="canvasLocation" x="1850.7246376811595" y="855.80357142857144"/>
         </scene>
         <!--Habit Detail View Controller-->
         <scene sceneID="hrX-co-U3h">
