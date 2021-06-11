@@ -36,6 +36,15 @@ struct Settings {
         }
     }
     
+    var followedUserIDs: [String] {
+        get {
+            return unarchiveJSON(key: Setting.followedUserIDs) ?? []
+        }
+        set {
+            archiveJSON(value: newValue, key: Setting.followedUserIDs)
+        }
+    }
+    
     mutating func googleFavorite(_ habit: Habit) {
         var favorites = favoriteHabits
         
@@ -51,4 +60,5 @@ struct Settings {
 
 enum Setting {
     static let favoriteHabits = "favoriteHabits"
+    static let followedUserIDs = "followedUserIDs"
 }

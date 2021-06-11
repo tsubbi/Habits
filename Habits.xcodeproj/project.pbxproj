@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1AA03992673121600EDF7FF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03982673121600EDF7FF /* User.swift */; };
+		A1AA039B267327B300EDF7FF /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA039A267327B300EDF7FF /* UserRequest.swift */; };
 		A1E6AEEB2671496900FF3E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AEEA2671496900FF3E8C /* AppDelegate.swift */; };
 		A1E6AEED2671496900FF3E8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AEEC2671496900FF3E8C /* SceneDelegate.swift */; };
 		A1E6AEF22671496900FF3E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E6AEF02671496900FF3E8C /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1AA03982673121600EDF7FF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1AA039A267327B300EDF7FF /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		A1E6AEE72671496900FF3E8C /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E6AEEA2671496900FF3E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E6AEEC2671496900FF3E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1AA039C2673281600EDF7FF /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				A1E6AF10267271BA00FF3E8C /* APIRequest.swift */,
+				A1E6AF1226727EEF00FF3E8C /* HabitRequest.swift */,
+				A1AA039A267327B300EDF7FF /* UserRequest.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		A1AA039D2673282600EDF7FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1E6AF232672E6B600FF3E8C /* NamedSectionHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A1E6AEDE2671496900FF3E8C = {
 			isa = PBXGroup;
 			children = (
@@ -89,11 +111,10 @@
 				A1E6AEF82671496C00FF3E8C /* Info.plist */,
 				A1E6AF0B2672700000FF3E8C /* ViewControllers */,
 				A1E6AF1A2672810D00FF3E8C /* Models */,
-				A1E6AF10267271BA00FF3E8C /* APIRequest.swift */,
-				A1E6AF1226727EEF00FF3E8C /* HabitRequest.swift */,
+				A1AA039C2673281600EDF7FF /* Networks */,
 				A1E6AF1F2672D27600FF3E8C /* Utility */,
 				A1E6AF222672D77D00FF3E8C /* Extension */,
-				A1E6AF232672E6B600FF3E8C /* NamedSectionHeaderView.swift */,
+				A1AA039D2673282600EDF7FF /* Views */,
 			);
 			path = Habits;
 			sourceTree = "<group>";
@@ -145,6 +166,7 @@
 				A1E6AF0E2672708400FF3E8C /* Habit.swift */,
 				A1E6AF18267280EA00FF3E8C /* Category.swift */,
 				A1E6AF16267280B500FF3E8C /* Color.swift */,
+				A1AA03982673121600EDF7FF /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +261,7 @@
 				A1E6AF212672D29F00FF3E8C /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */,
 				A1E6AF242672E6B700FF3E8C /* NamedSectionHeaderView.swift in Sources */,
 				A1E6AF0426726D5800FF3E8C /* UserCollectionViewController.swift in Sources */,
+				A1AA039B267327B300EDF7FF /* UserRequest.swift in Sources */,
 				A1E6AF0A26726D9A00FF3E8C /* UserDetailViewController.swift in Sources */,
 				A1E6AF0226726D3300FF3E8C /* HabitCollectionViewController.swift in Sources */,
 				A1E6AF17267280B500FF3E8C /* Color.swift in Sources */,
@@ -249,6 +272,7 @@
 				A1E6AF1E2672C18E00FF3E8C /* Settings.swift in Sources */,
 				A1E6AF0F2672708400FF3E8C /* Habit.swift in Sources */,
 				A1E6AF0826726D8E00FF3E8C /* HabitDetailViewController.swift in Sources */,
+				A1AA03992673121600EDF7FF /* User.swift in Sources */,
 				A1E6AF11267271BA00FF3E8C /* APIRequest.swift in Sources */,
 				A1E6AF0626726D7600FF3E8C /* LogCollectionViewController.swift in Sources */,
 				A1E6AF19267280EA00FF3E8C /* Category.swift in Sources */,
