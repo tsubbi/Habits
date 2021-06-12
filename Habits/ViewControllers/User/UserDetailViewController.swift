@@ -43,6 +43,13 @@ class UserDetailViewController: UIViewController {
         collectionView.collectionViewLayout = createLayout()
 
         update()
+        
+        ImageRequest(imageID: user.id).send { response in
+            DispatchQueue.main.async {
+                guard let image = try? response.get() else { return }
+                self.profileImageView.image = image
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
