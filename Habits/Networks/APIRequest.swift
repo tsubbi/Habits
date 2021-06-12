@@ -83,3 +83,11 @@ extension APIRequest where Response == UIImage {
         }.resume()
     }
 }
+
+extension APIRequest {
+    func send(completion: @escaping (Error?) -> Void) {
+        URLSession.shared.dataTask(with: request) {
+            completion($2)
+        }.resume()
+    }
+}
