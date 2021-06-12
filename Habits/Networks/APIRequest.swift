@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol APIRequest {
     associatedtype Response
@@ -24,6 +25,10 @@ extension APIRequest {
 extension APIRequest {
     var queryItems: [URLQueryItem]? { nil }
     var postData: Data? { nil }
+}
+
+enum ImageRequestError: Error {
+    case couldNotInitializeFromData
 }
 
 extension APIRequest {
@@ -58,6 +63,23 @@ extension APIRequest where Response: Decodable {
                     completion(.failure(error))
                 }
             } catch {  }
+        }.resume()
+    }
+}
+
+extension APIRequest where Response == UIImage {
+    func send(completion: @escaping (Result<Self.Response, Error>) -> Void) {
+        URLSession.shared.dataTask(with: request) {
+            guard $2 == nil else {
+                completion(.failure($2!))
+                return
+            }
+            
+            if let data = $0, let image = UIImage(data: data) {
+                completion(.success(image))
+            } else {
+                completion(.failure(ImageRequestError.couldNotInitializeFromData))
+            }
         }.resume()
     }
 }
