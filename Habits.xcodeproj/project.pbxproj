@@ -12,6 +12,10 @@
 		A1AA039F2673488800EDF7FF /* HabitStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA039E2673488800EDF7FF /* HabitStatistics.swift */; };
 		A1AA03A1267348E200EDF7FF /* UserCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03A0267348E200EDF7FF /* UserCount.swift */; };
 		A1AA03A326734A3000EDF7FF /* HabitStatisticsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03A226734A3000EDF7FF /* HabitStatisticsRequest.swift */; };
+		A1AA03A52673E01F00EDF7FF /* UserStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03A42673E01F00EDF7FF /* UserStatistics.swift */; };
+		A1AA03A72673E06700EDF7FF /* HabitCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03A62673E06700EDF7FF /* HabitCount.swift */; };
+		A1AA03A92673E0F400EDF7FF /* UserStatisticsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03A82673E0F400EDF7FF /* UserStatisticsRequest.swift */; };
+		A1AA03AB2673E14000EDF7FF /* HabitLeadStatisticsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA03AA2673E14000EDF7FF /* HabitLeadStatisticsRequest.swift */; };
 		A1E6AEEB2671496900FF3E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AEEA2671496900FF3E8C /* AppDelegate.swift */; };
 		A1E6AEED2671496900FF3E8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E6AEEC2671496900FF3E8C /* SceneDelegate.swift */; };
 		A1E6AEF22671496900FF3E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E6AEF02671496900FF3E8C /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 		A1AA039E2673488800EDF7FF /* HabitStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStatistics.swift; sourceTree = "<group>"; };
 		A1AA03A0267348E200EDF7FF /* UserCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCount.swift; sourceTree = "<group>"; };
 		A1AA03A226734A3000EDF7FF /* HabitStatisticsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitStatisticsRequest.swift; sourceTree = "<group>"; };
+		A1AA03A42673E01F00EDF7FF /* UserStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatistics.swift; sourceTree = "<group>"; };
+		A1AA03A62673E06700EDF7FF /* HabitCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCount.swift; sourceTree = "<group>"; };
+		A1AA03A82673E0F400EDF7FF /* UserStatisticsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatisticsRequest.swift; sourceTree = "<group>"; };
+		A1AA03AA2673E14000EDF7FF /* HabitLeadStatisticsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitLeadStatisticsRequest.swift; sourceTree = "<group>"; };
 		A1E6AEE72671496900FF3E8C /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E6AEEA2671496900FF3E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E6AEEC2671496900FF3E8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +90,8 @@
 				A1E6AF1226727EEF00FF3E8C /* HabitRequest.swift */,
 				A1AA039A267327B300EDF7FF /* UserRequest.swift */,
 				A1AA03A226734A3000EDF7FF /* HabitStatisticsRequest.swift */,
+				A1AA03A82673E0F400EDF7FF /* UserStatisticsRequest.swift */,
+				A1AA03AA2673E14000EDF7FF /* HabitLeadStatisticsRequest.swift */,
 			);
 			path = Networks;
 			sourceTree = "<group>";
@@ -89,6 +99,7 @@
 		A1AA039D2673282600EDF7FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1E6AF1B26728DAE00FF3E8C /* PrimarySecondaryTextCollectionViewCell.swift */,
 				A1E6AF232672E6B600FF3E8C /* NamedSectionHeaderView.swift */,
 			);
 			path = Views;
@@ -162,7 +173,6 @@
 			children = (
 				A1E6AF0126726D3300FF3E8C /* HabitCollectionViewController.swift */,
 				A1E6AF0726726D8E00FF3E8C /* HabitDetailViewController.swift */,
-				A1E6AF1B26728DAE00FF3E8C /* PrimarySecondaryTextCollectionViewCell.swift */,
 			);
 			path = Habit;
 			sourceTree = "<group>";
@@ -176,6 +186,8 @@
 				A1AA03982673121600EDF7FF /* User.swift */,
 				A1AA039E2673488800EDF7FF /* HabitStatistics.swift */,
 				A1AA03A0267348E200EDF7FF /* UserCount.swift */,
+				A1AA03A42673E01F00EDF7FF /* UserStatistics.swift */,
+				A1AA03A62673E06700EDF7FF /* HabitCount.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,6 +284,7 @@
 				A1E6AF212672D29F00FF3E8C /* UICollectionViewDiffableDataSource+ViewModel.swift in Sources */,
 				A1E6AF242672E6B700FF3E8C /* NamedSectionHeaderView.swift in Sources */,
 				A1E6AF0426726D5800FF3E8C /* UserCollectionViewController.swift in Sources */,
+				A1AA03AB2673E14000EDF7FF /* HabitLeadStatisticsRequest.swift in Sources */,
 				A1AA039B267327B300EDF7FF /* UserRequest.swift in Sources */,
 				A1E6AF0A26726D9A00FF3E8C /* UserDetailViewController.swift in Sources */,
 				A1E6AF0226726D3300FF3E8C /* HabitCollectionViewController.swift in Sources */,
@@ -284,9 +297,12 @@
 				A1E6AF1E2672C18E00FF3E8C /* Settings.swift in Sources */,
 				A1E6AF0F2672708400FF3E8C /* Habit.swift in Sources */,
 				A1E6AF0826726D8E00FF3E8C /* HabitDetailViewController.swift in Sources */,
+				A1AA03A52673E01F00EDF7FF /* UserStatistics.swift in Sources */,
 				A1AA03992673121600EDF7FF /* User.swift in Sources */,
+				A1AA03A72673E06700EDF7FF /* HabitCount.swift in Sources */,
 				A1E6AF11267271BA00FF3E8C /* APIRequest.swift in Sources */,
 				A1E6AF0626726D7600FF3E8C /* LogCollectionViewController.swift in Sources */,
+				A1AA03A92673E0F400EDF7FF /* UserStatisticsRequest.swift in Sources */,
 				A1E6AF19267280EA00FF3E8C /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

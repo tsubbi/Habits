@@ -35,6 +35,10 @@ class HabitDetailViewController: UIViewController {
         categoryLabel.text = habit.category.name
         infoLabel.text = habit.info
         
+        dataSource = createDataSource()
+        collectionView.dataSource = dataSource
+        collectionView.collectionViewLayout = createLayout()
+        
         update()
     }
     
@@ -59,11 +63,7 @@ class HabitDetailViewController: UIViewController {
         HabitStatisticsRequest(habitNames: [habit.name]).send {
             switch $0 {
             case .success(let statistics):
-                if statistics.count > 0 {
-                    self.model.habitStatistics = statistics[0]
-                } else {
-                    self.model.habitStatistics = nil
-                }
+                self.model.habitStatistics = statistics.count > 0 ? statistics[0] : nil
             default:
                 self.model.habitStatistics = nil
             }
@@ -75,7 +75,9 @@ class HabitDetailViewController: UIViewController {
     }
     
     func updateCollectionView() {
-        let items = (self.model.habitStatistics?.userCount.map { ViewModel.Item.single($0) } ?? []).sorted(by: >)
+        let items = (self.model.habitStatistics?.userCounts
+                        .map { ViewModel.Item.single($0) } ?? [])
+                        .sorted(by: >)
 
         dataSource.applySnapshotUsing(sectionIDs: [.remaining], itemsBySection: [.remaining: items])
     }
@@ -142,7 +144,7 @@ extension HabitDetailViewController {
     struct Model {
         var habitStatistics: HabitStatistics?
         var userCounts: [UserCount] {
-            habitStatistics?.userCount ?? []
+            habitStatistics?.userCounts ?? []
         }
     }
 }
